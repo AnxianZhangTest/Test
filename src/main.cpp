@@ -3,7 +3,7 @@
  * @author Anxian Zhang (gadanxianzhang@gmail.com.com)
            Vick Ye (vickye2908@gmail.com)
  * @brief Application qui nous permet de jouer
-          au démineur
+          au dï¿½mineur
  * @version 7
  * @date 2021-12-31
  * 
@@ -21,6 +21,8 @@ using namespace std;
 
 int main(void)
 {
+
+    // test de modif abzdoaobdbzobizaobizadobidzaoibdozbiaoibdzaoiblazdobilkdzaoil
     srand((unsigned)time(NULL));
 
     Grid jeu;
@@ -37,7 +39,7 @@ int main(void)
     switch (num_commande)
     {
     case 1:
-        // Génération du problème
+        // Gï¿½nï¿½ration du problï¿½me
         saisie_problem(probleme);
         creation_problem(jeu, probleme);
         affichage_problem(probleme);
@@ -45,7 +47,7 @@ int main(void)
         desallocation_grille(jeu);
         break;
     case 2:
-        // Génération de la grille
+        // Gï¿½nï¿½ration de la grille
         saisie_grille(jeu, probleme, historique);
         creation_grille(jeu, probleme, historique);
         affichage_grille(jeu, probleme);
@@ -54,7 +56,7 @@ int main(void)
         desallocation_grille(jeu);
         break;
     case 3:
-        // Partie gagné ?
+        // Partie gagnï¿½ ?
         saisie_grille(jeu, probleme, historique);
         creation_grille(jeu, probleme, historique);
         test_won(jeu, probleme);
@@ -73,7 +75,7 @@ int main(void)
         desallocation_grille(jeu);
         break;
     case 5:
-        // Création d'un nouveau coup
+        // Crï¿½ation d'un nouveau coup
         saisie_dimension_grille(jeu);
         creat_new_move(jeu, new_move);
         //affichage du nouveau coup
